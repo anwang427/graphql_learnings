@@ -20,6 +20,9 @@ import { GraphQLServer } from 'graphql-yoga';
 const typeDefs = `
     type Query {
         hello: String!
+        name: String!
+        location: String!
+        bio: String!
     }
 `
 // Resolvers (what the query returns)
@@ -27,6 +30,15 @@ const resolvers = {
     Query: {
         hello() {
             return 'Hello world!'
+        },
+        name() {
+            return 'Anna'
+        },
+        location() {
+            return 'Ontario'
+        },
+        bio() {
+            return 'programmer, tinkerer, entrepreneur'
         }
     }
 }
