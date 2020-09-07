@@ -1,0 +1,11 @@
+# Operation one: query
+
+query {
+  # specify which fields are desired from the api
+  # no extra punctuation needed
+  hello
+  courseInstructor
+  course
+  me{name}
+}
+
